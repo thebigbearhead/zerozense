@@ -60,7 +60,7 @@ export default function Index() {
 
           {/* Live View Area */}
           <div
-            className="bg-app-view relative flex items-center justify-center overflow-hidden"
+            className="bg-app-view relative flex items-center justify-center overflow-hidden font-normal sm:font-normal"
             style={{
               borderRadius: "17px",
               height: "280px",

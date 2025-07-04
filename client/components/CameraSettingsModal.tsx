@@ -84,8 +84,9 @@ export default function CameraSettingsModal({
               </label>
               <input
                 type="password"
-                placeholder=""
-                className="w-full h-10 px-3 bg-gray-300 text-gray-500 rounded-lg border border-gray-400 text-sm"
+                value="your password"
+                disabled
+                className="w-full h-10 px-3 bg-gray-300 text-gray-500 rounded-lg border border-gray-400 text-sm font-bold"
               />
             </div>
           </div>
@@ -127,15 +128,21 @@ export default function CameraSettingsModal({
           </div>
         </div>
 
-        {/* Action buttons could be added here */}
+        {/* Action buttons */}
         <div className="mt-8 flex justify-end gap-3">
+          <button className="px-4 py-2 bg-red-800 text-white text-sm font-bold rounded-lg transition-colors mr-28">
+            Test Connection
+          </button>
           <button
             onClick={onClose}
-            className="px-4 py-2 text-white text-sm hover:bg-white hover:bg-opacity-10 rounded-lg transition-colors"
+            className="px-4 py-2 text-white text-sm font-semibold hover:bg-white hover:bg-opacity-10 rounded-lg transition-colors"
           >
             Cancel
           </button>
-          <button className="px-4 py-2 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition-colors">
+          <button
+            className="px-4 py-2 text-white text-sm font-bold rounded-lg transition-colors"
+            style={{ backgroundColor: "rgb(138, 18, 235)" }}
+          >
             Save
           </button>
         </div>

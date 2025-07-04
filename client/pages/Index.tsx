@@ -60,10 +60,9 @@ export default function Index() {
 
           {/* Live View Area */}
           <div
-            className="bg-app-view relative flex items-center justify-center overflow-hidden font-normal sm:font-normal"
+            className="bg-app-view relative flex items-center justify-center overflow-hidden font-normal sm:font-normal h-[180px] sm:h-[280px] min-h-[180px] max-h-[1080px]"
             style={{
               borderRadius: "17px",
-              height: "280px",
               marginBottom: "7px",
             }}
           >
@@ -110,10 +109,9 @@ export default function Index() {
 
           {/* Live View Area */}
           <div
-            className="bg-app-view relative flex items-center justify-center"
+            className="bg-app-view relative flex items-center justify-center h-[180px] sm:h-[280px] min-h-[180px] max-h-[1080px]"
             style={{
               borderRadius: "17px",
-              height: "280px",
               marginBottom: "7px",
             }}
           >

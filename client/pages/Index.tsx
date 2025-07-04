@@ -23,8 +23,11 @@ export default function Index() {
           </div>
 
           {/* Live View Area */}
-          <div className="bg-app-view rounded-[30px] h-52 mb-6 relative">
-            {/* Placeholder for video feed */}
+          <div className="bg-app-view rounded-[30px] h-52 mb-6 relative flex items-center justify-center">
+            <div className="text-gray-600 text-center">
+              <Camera className="w-8 h-8 mx-auto mb-2 opacity-30" />
+              <p className="text-xs opacity-50">Camera Feed</p>
+            </div>
           </div>
 
           {/* Status Info */}
@@ -47,8 +50,11 @@ export default function Index() {
           </div>
 
           {/* Live View Area */}
-          <div className="bg-app-view rounded-[30px] h-52 mb-6 relative">
-            {/* Placeholder for video feed */}
+          <div className="bg-app-view rounded-[30px] h-52 mb-6 relative flex items-center justify-center">
+            <div className="text-gray-600 text-center">
+              <Camera className="w-8 h-8 mx-auto mb-2 opacity-30" />
+              <p className="text-xs opacity-50">Camera Feed</p>
+            </div>
           </div>
 
           {/* Status Info */}

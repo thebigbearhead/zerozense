@@ -60,8 +60,9 @@ export default function CameraSettingsModal({
               </label>
               <input
                 type="text"
-                placeholder=""
-                className="w-full h-10 px-3 bg-gray-300 text-gray-500 rounded-lg border border-gray-400 text-sm"
+                value="192.168.1.xx"
+                disabled
+                className="w-full h-10 px-3 bg-gray-300 text-gray-500 rounded-lg border border-gray-400 text-sm font-bold"
               />
             </div>
           </div>
@@ -74,8 +75,9 @@ export default function CameraSettingsModal({
               </label>
               <input
                 type="text"
-                placeholder=""
-                className="w-full h-10 px-3 bg-gray-300 text-gray-500 rounded-lg border border-gray-400 text-sm"
+                value="app username"
+                disabled
+                className="w-full h-10 px-3 bg-gray-300 text-gray-500 rounded-lg border border-gray-400 text-sm font-bold"
               />
             </div>
             <div>
@@ -99,8 +101,9 @@ export default function CameraSettingsModal({
               </label>
               <input
                 type="text"
-                placeholder=""
-                className="w-full h-10 px-3 bg-gray-300 text-gray-500 rounded-lg border border-gray-400 text-sm"
+                value="RTSP / ONVIF"
+                disabled
+                className="w-full h-10 px-3 bg-gray-300 text-gray-500 rounded-lg border border-gray-400 text-sm font-bold"
               />
             </div>
             <div>
@@ -109,8 +112,9 @@ export default function CameraSettingsModal({
               </label>
               <input
                 type="text"
-                placeholder=""
-                className="w-full h-10 px-3 bg-gray-300 text-gray-500 rounded-lg border border-gray-400 text-sm"
+                value="554 / 2020"
+                disabled
+                className="w-full h-10 px-3 bg-gray-300 text-gray-500 rounded-lg border border-gray-400 text-sm font-bold"
               />
             </div>
           </div>
@@ -122,8 +126,9 @@ export default function CameraSettingsModal({
             </label>
             <input
               type="text"
-              placeholder=""
-              className="w-full h-10 px-3 bg-gray-300 text-gray-500 rounded-lg border border-gray-400 text-sm"
+              value="Choos your file capture destination"
+              disabled
+              className="w-full h-10 px-3 bg-gray-300 text-gray-500 rounded-lg border border-gray-400 text-sm font-bold"
             />
           </div>
         </div>

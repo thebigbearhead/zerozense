@@ -57,6 +57,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        app: {
+          background: "hsl(var(--app-background))",
+          card: "hsl(var(--camera-card))",
+          live: "hsl(var(--live-indicator))",
+          ip: "hsl(var(--ip-address))",
+          view: "hsl(var(--camera-view))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -17,7 +17,7 @@ export default function CameraSettingsModal({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Backdrop */}
       <div
-        className="absolute inset-0 bg-yellow bg-opacity-25"
+        className="absolute inset-0 bg-Dark Blue bg-opacity-35"
         onClick={onClose}
       />
 

@@ -1,6 +1,23 @@
 import { Camera, Video, Download, VolumeX, Settings } from "lucide-react";
+import { useState } from "react";
+import CameraSettingsModal from "../components/CameraSettingsModal";
 
 export default function Index() {
+  const [settingsModal, setSettingsModal] = useState<{
+    isOpen: boolean;
+    cameraName: string;
+  }>({
+    isOpen: false,
+    cameraName: "",
+  });
+
+  const openSettings = (cameraName: string) => {
+    setSettingsModal({ isOpen: true, cameraName });
+  };
+
+  const closeSettings = () => {
+    setSettingsModal({ isOpen: false, cameraName: "" });
+  };
   return (
     <div className="min-h-screen bg-app-background overflow-hidden max-w-md mx-auto relative md:max-w-lg lg:max-w-xl">
       {/* Header */}
@@ -32,7 +49,13 @@ export default function Index() {
             style={{ marginBottom: "10px" }}
           >
             <h2 className="text-white text-sm font-semibold">Tapo C210</h2>
-            <Settings className="w-6 h-6 text-[#8FBFFA]" />
+            <button
+              onClick={() => openSettings("Tapo C210")}
+              className="p-1 hover:bg-white hover:bg-opacity-10 rounded-lg transition-colors"
+              aria-label="Camera settings"
+            >
+              <Settings className="w-6 h-6 text-[#8FBFFA]" />
+            </button>
           </div>
 
           {/* Live View Area */}
@@ -76,7 +99,13 @@ export default function Index() {
             style={{ marginBottom: "10px" }}
           >
             <h2 className="text-white text-sm font-semibold">Tapo C211</h2>
-            <Settings className="w-6 h-6 text-[#8FBFFA]" />
+            <button
+              onClick={() => openSettings("Tapo C211")}
+              className="p-1 hover:bg-white hover:bg-opacity-10 rounded-lg transition-colors"
+              aria-label="Camera settings"
+            >
+              <Settings className="w-6 h-6 text-[#8FBFFA]" />
+            </button>
           </div>
 
           {/* Live View Area */}
@@ -153,6 +182,13 @@ export default function Index() {
           </div>
         </div>
       </footer>
+
+      {/* Camera Settings Modal */}
+      <CameraSettingsModal
+        isOpen={settingsModal.isOpen}
+        onClose={closeSettings}
+        cameraName={settingsModal.cameraName}
+      />
     </div>
   );
 }

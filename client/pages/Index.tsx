@@ -15,18 +15,35 @@ export default function Index() {
 
       {/* Main Content */}
       <main
-        className="px-3 py-4 sm:px-4 sm:py-6 space-y-4 sm:space-y-6"
-        style={{ backgroundColor: "rgba(152, 79, 116, 1)" }}
+        className="space-y-3"
+        style={{
+          backgroundColor: "rgba(152, 79, 116, 1)",
+          marginBottom: "66px",
+          padding: "12px 16px 46px",
+        }}
       >
         {/* Camera Card 1 - Tapo C210 */}
-        <div className="bg-app-card rounded-[35px] sm:rounded-[49px] p-5 sm:p-8 relative overflow-hidden">
-          <div className="flex items-center justify-between mb-3 sm:mb-4">
+        <div
+          className="bg-app-card relative overflow-hidden"
+          style={{ borderRadius: "20px", padding: "20px 32px" }}
+        >
+          <div
+            className="flex items-center justify-between"
+            style={{ marginBottom: "10px" }}
+          >
             <h2 className="text-white text-sm font-semibold">Tapo C210</h2>
-            <Settings className="w-5 h-5 sm:w-6 sm:h-6 text-[#8FBFFA]" />
+            <Settings className="w-6 h-6 text-[#8FBFFA]" />
           </div>
 
           {/* Live View Area */}
-          <div className="bg-app-view rounded-[20px] sm:rounded-[30px] h-40 sm:h-52 mb-4 sm:mb-6 relative flex items-center justify-center">
+          <div
+            className="bg-app-view relative flex items-center justify-center overflow-hidden"
+            style={{
+              borderRadius: "17px",
+              height: "280px",
+              marginBottom: "7px",
+            }}
+          >
             <div className="text-gray-600 text-center">
               <Camera className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 opacity-30" />
               <p className="text-xs opacity-50">Camera Feed</p>
@@ -36,26 +53,41 @@ export default function Index() {
           {/* Status Info */}
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-app-live"></div>
-              <span className="text-app-live text-xs sm:text-sm font-semibold">
-                LIVE
-              </span>
+              <div className="w-4 h-4 rounded-full bg-app-live"></div>
+              <span className="text-app-live text-sm font-semibold">LIVE</span>
             </div>
-            <span className="text-app-ip text-xs sm:text-sm font-medium">
+            <span className="text-app-ip text-sm font-medium">
               192.168.1.198
             </span>
           </div>
         </div>
 
         {/* Camera Card 2 - Tapo C211 */}
-        <div className="bg-app-card rounded-[35px] sm:rounded-[49px] p-5 sm:p-8 relative overflow-hidden">
-          <div className="flex items-center justify-between mb-3 sm:mb-4">
+        <div
+          className="bg-app-card relative overflow-hidden"
+          style={{
+            borderRadius: "20px",
+            padding: "20px 32px",
+            marginTop: "12px",
+          }}
+        >
+          <div
+            className="flex items-center justify-between"
+            style={{ marginBottom: "10px" }}
+          >
             <h2 className="text-white text-sm font-semibold">Tapo C211</h2>
-            <Settings className="w-5 h-5 sm:w-6 sm:h-6 text-[#8FBFFA]" />
+            <Settings className="w-6 h-6 text-[#8FBFFA]" />
           </div>
 
           {/* Live View Area */}
-          <div className="bg-app-view rounded-[20px] sm:rounded-[30px] h-40 sm:h-52 mb-4 sm:mb-6 relative flex items-center justify-center">
+          <div
+            className="bg-app-view relative flex items-center justify-center"
+            style={{
+              borderRadius: "17px",
+              height: "280px",
+              marginBottom: "7px",
+            }}
+          >
             <div className="text-gray-600 text-center">
               <Camera className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 opacity-30" />
               <p className="text-xs opacity-50">Camera Feed</p>
@@ -65,12 +97,10 @@ export default function Index() {
           {/* Status Info */}
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-app-live"></div>
-              <span className="text-app-live text-xs sm:text-sm font-semibold">
-                LIVE
-              </span>
+              <div className="w-4 h-4 rounded-full bg-app-live"></div>
+              <span className="text-app-live text-sm font-semibold">LIVE</span>
             </div>
-            <span className="text-app-ip text-xs sm:text-sm font-medium">
+            <span className="text-app-ip text-sm font-medium">
               192.168.1.197
             </span>
           </div>
@@ -79,15 +109,16 @@ export default function Index() {
 
       {/* Footer */}
       <footer
-        className="absolute bottom-0 left-0 right-0 pb-6 sm:pb-8 mb-auto"
+        className="absolute left-0 right-0 mb-auto"
         style={{
           backgroundColor: "rgb(31, 35, 59)",
-          padding: "0 24px 32px 12px",
+          bottom: "1px",
+          padding: "0 24px 0 12px",
         }}
       >
         <div
-          className="flex justify-between items-center pl-5"
-          style={{ margin: "20px 0 56px" }}
+          className="flex justify-between items-center"
+          style={{ margin: "20px auto auto", padding: "0 0 20px 20px" }}
         >
           <div className="text-white text-xs max-w-20 sm:max-w-24 leading-tight">
             Their business

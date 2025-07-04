@@ -14,7 +14,10 @@ export default function Index() {
       </header>
 
       {/* Main Content */}
-      <main className="px-3 py-4 sm:px-4 sm:py-6 space-y-4 sm:space-y-6">
+      <main
+        className="px-3 py-4 sm:px-4 sm:py-6 space-y-4 sm:space-y-6"
+        style={{ backgroundColor: "rgba(152, 79, 116, 1)" }}
+      >
         {/* Camera Card 1 - Tapo C210 */}
         <div className="bg-app-card rounded-[35px] sm:rounded-[49px] p-5 sm:p-8 relative overflow-hidden">
           <div className="flex items-center justify-between mb-3 sm:mb-4">
@@ -75,8 +78,17 @@ export default function Index() {
       </main>
 
       {/* Footer */}
-      <footer className="absolute bottom-0 left-0 right-0 px-4 sm:px-6 pb-6 sm:pb-8">
-        <div className="flex justify-between items-center mb-4 sm:mb-6">
+      <footer
+        className="absolute bottom-0 left-0 right-0 pb-6 sm:pb-8 mb-auto"
+        style={{
+          backgroundColor: "rgb(31, 35, 59)",
+          padding: "0 24px 32px 12px",
+        }}
+      >
+        <div
+          className="flex justify-between items-center pl-5"
+          style={{ margin: "20px 0 56px" }}
+        >
           <div className="text-white text-xs max-w-20 sm:max-w-24 leading-tight">
             Their business
             <br />
